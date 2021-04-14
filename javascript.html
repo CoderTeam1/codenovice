@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Easiest Way To Learn Programming</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Learning About Javascript</h1>
+  <h3>Lets Learn About Variables and Constants</h3>
+  <p>In our school life, we learned about variables and equations in algebra. Let assume a=30, b=12 and c= a-b, then
+    c=18, i.e. variables like a, b, c store numbers. In JavaScript
+    and other programming language, a variable contain values (piece of information) and stores in computer's memory
+    which is changeable.</p>
+  <br>
+  <h3> Valid identifier names</h3>
+  <br>
+  <p>The first character must be a UnicodeLetter, an underscore (_), dollar sign ($), or \ UnicodeEscapeSequence
+    The rest of the name can be made up of starting character, UnicodeCombiningMark, UnicodeDigit,
+    UnicodeConnectorPunctuation, <ZWNJ>, <ZWJ>
+        A variable name cannot contain space character.
+        In JavaScript, variables are case sensitive, so emp_code is different from Emp_Code.
+        We should not use the "reserve words" like alert, var as a variable name.</p>
+
+  <p> The List OF reserve keywords are :-
+    <code>
+    break	,for, throw
+    case, function,	try
+    catch,	if,	typeof
+    continue,	in,	var
+    default,	instanceof,	void
+    delete,	new, while
+    do,	return,	with
+    else,	switch	 
+    finally, this
+    </code>
+  </p>
+  <h1>Array Literal </h1>
+  <p>In Javascript, an array literal is a list of expressions, each of which represents an array element, enclosed in a
+    pair of square brackets '
+    [ ] ' . When an array is created using an array literal, it is initialized with the specified values as its
+    elements, and its length is set
+    to the number of arguments specified. If no value is supplied it creates an empty array with zero length.
+    Creating an empty array :
+    <code>var fruits = [ ];</code>
+
+    Creating an array with four elements :-
+
+    <code>var fruits = ["Orange", "Apple", "Banana", "Mango"]</code>
+
+    It is important to put a Comma in array literals.
+
+    There is no need to specify all elements in an array literal. If we put two commas in a row at any position in an
+    array then an unspecified element will be created in that place.
+
+    The following example creates the fruits array :
+
+    <code>fruits = ["Orange", , "Mango"]</code>
+
+    This array has one empty element in the middle and two elements with values. ( fruits[0] is "Orange", fruits[1] is
+    set to undefined, and fruits[2] is "Mango").
+
+    If you include a single comma at the end of the elements, the comma is ignored. In the following example, the length
+    of the array is three. There are no fruits[2].
+
+    <code>fruits = ["Orange", "Mango",]</code>
+
+    In the following example, the length of the array is four, and fruits[0] and fruits[2] are undefined.
+
+    <code>fruits = [ , 'Apple', , 'Orange']; </code>
+
+  <h1><b><u>JavaScript: Integers literals</u></b></h1>
+
+  Description
+
+  An integer must have at least one digit (0-9).
+
+  No comma or blanks are allowed within an integer.
+  It does not contain any fractional part.
+  It can be either positive or negative if no sign precedes it is assumed to be positive.
+  In JavaScript, integers can be expressed in three different bases.
+
+  1. Decimal ( base 10)
+  Decimal numbers can be made with the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 and there will be no leading zeros.
+  Example: 123, -20, 12345
+
+  2. Hexadecimal ( base 16)
+  Hexadecimal numbers can be made with the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 and letters A, B, C, D, E, F or a, b, c,
+  d, e, f. A leading 0x or 0X indicates the number is hexadecimal.
+  Example: 7b, -14, 3039
+
+  3. Octal (base 8)
+  Octal numbers can be made with the digits 0, 1, 2, 3, 4, 5, 6, 7. A leading 0 indicates the number is octal.
+  Example: 173, -24, 30071
+
+  <h1>JavaScript: Floating number literals</h1>
+
+  Description
+
+  A floating number has the following parts.
+
+  A decimal integer.
+  A decimal point ('.').
+  A fraction.
+  An exponent.
+  The exponent part is an "e" or "E" followed by an integer, which can be signed (preceded by "+" or "-").
+
+  Example of some floating numbers :
+
+  8.2935
+  -14.72
+  12.4e3 [ Equivalent to 12.4 x 103 ]
+  4E-3 [ Equivalent to 4 x 10-3 => .004 ]
+  JavaScript: Boolean literals
+
+  The Boolean type has two literal values:
+  true
+  false
+  JavaScript: Object literals
+
+  Description
+
+  An object literal is zero or more pairs of comma-separated list of property names and associated values, enclosed by a
+  pair of curly braces.
+
+  In JavaScript an object literal is declared as follows:
+
+  1. An object literal without properties:
+
+  <code>var userObject = {}</code>
+
+  2. An object literal with a few properties :
+
+  <code>
+    var student = {
+    First-name : "Suresy",
+    Last-name : "Rayy",
+    Roll-No : 12
+    };
+  </code>
+
+  Syntax Rules
+
+  Object literals maintain the following syntax rules:
+
+  There is a colon (:) between property name and value.
+  A comma separates each property name/value from the next.
+  There will be no comma after the last property name/value pair.
+  JavaScript: String literals
+
+  Description
+
+  JavaScript has its own way to deal with string literals. A string literal is zero or more characters, either enclosed
+  in single quotation (') marks or double quotation (") marks. You can also use + operator to join strings. The
+  following are the examples of string literals :
+
+  <code>
+    string1 = "w3resource.com"
+    string1 = 'w3resource.com'
+    string1 = "1000"
+    string1 = "google" + ".com"
+  </code>
+  
+  In addition to ordinary characters, you can include special characters in strings, as shown in the following table.
+
+  <code>string1 = "First line. \n Second line."</code>
+
+  List of special characters used in JavaScript string:
+
+  Character Meaning
+  \b Backspace
+  \f Form feed
+  \n New line
+  \r Carriage return
+  \t Tab
+  \' Single quote
+  \" Double quote
+  \\ Backslash character (\)
+  \XXX The character with the Latin-1 encoding specified by up to three octal digits XXX between 0 and 377. For example,
+  \100 is the octal sequence for the @ symbol.
+  \xXX The character with the Latin-1 encoding specified by the two hexadecimal digits XX between 00 and FF. For
+  example, \x40 is the hexadecimal sequence for the @ symbol.
+  \uXXXX The Unicode character specified by the four hexadecimal digits XXXX. For example, \u0040 is the Unicode
+  sequence for the @ symbol.</h1>
+</p>
+
+</body>
+</html>
+<!--The code below is of CreateJs and do not edit-->
+<head>
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+  <script>
+    function init() {
+      // easeljs starts here
+      var stage = new createjs.Stage("demoCanvas");
+      var circle = new createjs.Shape();
+      circle.graphics.beginFill("Orange").drawCircle(0, 0, 50);
+      circle.x = 100;
+      circle.y = 100;
+      stage.addChild(circle);
+      // stage.update();     Use this for easel js and Tween js starts here
+      createjs.Tween.get(circle, { loop: true})
+      .to({x: 400}, 1000, createjs.Ease.getPowInOut(4))
+      .to({alpha: 0,y: 175}, 500, createjs.Ease.getPowInOut(2))
+      .to({alpha: 0,y: 225}, 100)
+      .to({alpha: 1,y: 200}, 500, createjs.Ease.getPowInOut(2))
+      .to({x: 100}, 800, createjs.Ease.getPowInOut(2));
+      createjs.Ticker.setFPS(60);
+      createjs.Ticker.addEventListener("tick", stage);
+      // Tween js ends here
+    }
+  </script>
+</head>
+
+<body onload="init();">
+  <canvas id="demoCanvas" width="500" height="500"></canvas>
+</body>
